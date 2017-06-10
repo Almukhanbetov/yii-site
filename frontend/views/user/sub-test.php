@@ -1,0 +1,2 @@
+<button class="btn btn-success" ng-click="subscribe(<?=Yii::$app->user->id?>, <?=Yii::$app->request->get()['id']?>)">Subscribe!</button>
+<button class="btn btn-danger" ng-click="unsubscribe(<?=Yii::$app->user->id?>, <?=Yii::$app->request->get()['id']?>)">Unsubscribe</button>hggfhfgh

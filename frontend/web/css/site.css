@@ -1,0 +1,371 @@
+html,
+body {
+    height: 100%;
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: "\e151";
+}
+
+a.desc:after {
+    content: "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view td {
+    white-space: nowrap;
+}
+
+.grid-view .filters input,
+.grid-view .filters select {
+    min-width: 50px;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
+
+/* align the logout "link" (button in form) of the navbar */
+.nav li > form > button.logout {
+    padding: 15px;
+    border: none;
+}
+
+@media(max-width:767px) {
+    .nav li > form > button.logout {
+        display:block;
+        text-align: left;
+        width: 100%;
+        padding: 10px 15px;
+    }
+}
+
+.nav > li > form > button.logout:focus,
+.nav > li > form > button.logout:hover {
+    text-decoration: none;
+}
+
+.nav > li > form > button.logout:focus {
+    outline: none;
+}
+
+
+.profile, .index{
+	width: 1000px;
+	margin: 0 auto;
+}
+.profile .leftside{
+	width: 290px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	    border: 1px dashed #ccc;
+}.profile .rightside{
+	width: 690px;
+	display: inline-block;
+	vertical-align: top;
+	float: right;
+}
+.index .leftside, .index .rightside{
+	width: 190px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	    border: 1px dashed #ccc;
+}
+.index .mainside{
+	width: 590px;
+	display: inline-block;
+	text-align: center;
+	vertical-align: top;
+	    border: 1px dashed #ccc;
+	    margin: 0 10px;
+}
+.subscribers > div, .subscribing > div{
+	display: inline-block;
+	width: 40px;
+	margin-right: 10px;
+}
+.post-profile{
+	clear: both;
+}
+.post-profile .main-picture{
+	width: 300px;
+	display: inline-block;
+	/*border-radius: 50%;*/
+}
+.post-profile h3{
+	display: inline;
+}
+.post-profile .left, .post-profile .right{
+	display: inline-block;
+	width: 48%;
+	vertical-align: middle;
+}
+.big-avatar{
+	margin-bottom: 30px;
+}
+.one-user{
+	width: 190px;
+}
+.mainside .post-profile .main-picture{
+	width: 250px;
+}
+.mainside .post-profile h3{
+	font-size: 18px;
+}
+.big-avatar img{
+	max-height: 350px;
+}
+.add-post{
+	border: 1px solid black;
+    padding: 15px;
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.add-post a{
+	text-decoration: none;
+}
+.add-post-text{
+	width: 100%;
+    height: 300px;
+    padding: 20px;
+    text-indent: 30px;
+    font-size: 25px;
+}
+.post-block input{
+	width: 100%;
+	margin-bottom: 10px;
+	padding: 10px;
+}
+.post-block{
+	margin-bottom: 20px;
+}
+.dNone{
+	display: none;
+}
+.like {
+    cursor: pointer;
+    height: 36px;
+    clear: both;
+    padding-top: 5px;
+    width: 10%;
+	display: inline-block;
+	vertical-align: middle;
+}
+.hits-icon{
+	height: 36px;
+    clear: both;
+    padding-top: 5px;
+    width: 10%;
+	display: inline-block;
+	    margin-left: 30px;
+	vertical-align: middle;
+}
+.hits-icon .icon{
+	bottom: 7px;
+    color: #333333;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+	width: 65px;
+    height: 45px;
+    line-height: 35px;
+	background: url(../img/view2.png) no-repeat;
+    background-position: 0px 3px;
+    background-size: 100%;
+	padding-top: 5px;
+}
+.comments-icon{
+	height: 36px;
+    clear: both;
+    padding-top: 5px;
+    width: 10%;
+	display: inline-block;
+	margin-left: 30px;
+	vertical-align: middle;
+}
+.comments-icon .icon{
+	bottom: 7px;
+    color: #333333;
+    font-size: 12px;
+    text-align: center;
+    display: inline-block;
+    width: 49px;
+    height: 40px;
+    line-height: 35px;
+	background: url(../img/comment2.png) no-repeat;
+    background-position: 0px 0px;
+    background-size: 111%;
+}
+.like .counter {
+    bottom: 7px;
+    color: #333333;
+    font-size: 12px;
+    text-align: center;
+    display: block;
+    width: 45px;
+    height: 40px;
+    line-height: 35px;
+}
+.like span:hover, .like span {
+    background: url(../img/like.png) no-repeat;
+    background-position: -4px -7px;
+    background-size: 124%;
+}
+.like.active span:hover, .like.active span {
+    background: url(../img/like_active.png) no-repeat;
+    background-position: -4px -7px;
+    background-size: 124%;
+}
+.user-desc h5{
+	padding: 15px;
+}
+.interests{
+	margin-bottom: 15px;
+}
+#edit-form, .avatar-list{
+	width: 45%;
+	display: inline-block;
+	vertical-align: top;
+}
+.avatar-list{
+	margin-left: 40px;
+}
+.one-avatar{
+	
+}
+.one-avatar img{
+	height: 200px;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+.comments{
+	width: 75%;
+    float: right;
+    margin-bottom: 20px;
+	margin-top: -10px;
+    border: 1px dashed #ccc;
+	padding: 0px 20px;
+}
+.comments h3{
+	text-align: center;
+	margin-top: 10px;
+}
+.comment{
+	padding-left: 20px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+.comment tr{
+	border: 1px solid green;
+	
+}
+.comment em{
+	font-style: normal;
+    font-weight: 600;
+}
+.comment tr td{
+	padding: 10px;
+}
+.comment tr td:nth-of-type(1){
+	width: 140px;
+}
+.comment tr td:nth-of-type(2){
+	padding-left: 15px;
+
+}
+.comment tr td:nth-of-type(1) span{
+	font-size: 13px;
+	
+}
+.post-wrapper{
+	clear: both;
+	margin-bottom: 40px;
+    border: 1px dashed #ccc;
+    padding: 20px;
+}
+.comments-icon .icon:hover{
+	cursor: pointer;
+}
+.comments button.btn-info{
+	margin-bottom: 20px;
+}
+.add-new-comment textarea{
+	width: 100%;
+    height: 90px;
+    margin-bottom: 15px;
+    padding: 10px;
+	resize: vertical;
+}
